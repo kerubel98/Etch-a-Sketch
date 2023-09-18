@@ -5,10 +5,50 @@ body {
 .container {
     display: block;
     border: 1px solid bisque;
+    height: 630px;
 }
 .nav {
     display: flex;
     border: 1px solid bisque;
     justify-content: space-around;
     align-items: center;
+    background-color: whitesmoke;
+}
+.container-1 {
+    display: flex;
+    justify-content: start;
+    height: 550px;
+    gap: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 200px;
+    height: 500px;
+    border: 1px solid bisque;
+    
+}
+.cnavas {
+    background:#fff;
+    box-shadow:0 2px 5px;
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.container2 {
+    display: flex;
+    height: 16px;
+    width: 930px;
+    flex: 1;
+}
+.new {
+    flex: 1;
+}
+.newr {
+    background-color: black;
 }
