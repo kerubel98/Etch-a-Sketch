@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec243a4c3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side_pnal">
+            <div class="brash_size">
+                <button class="size">pen size</button>
+            </div>
+            <div class="changColor">
+                <button class="color">Color</button>
+            </div>
+            <div class="erser">
+                <button class="erse">Erase</button>
+            </div>
+        </div>
+        
+        <div class="container-1">
+            <span class="heder">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+                <h1>Etch-a-sketch</h1>
+            </span>
+            <div class="cnavas">
+                
+
+            </div>
+        </div>
+       
+    </div>
+    <script>
+        const cons = document.querySelector('.cnavas');
+        for (let j = 0; j < 30; j++) {
+            const element = document.createElement('div');
+            element.classList.add('container2');
+            cons.appendChild(element);
+            for (let i = 0; i < 30; i++) {
+                const divs = document.createElement('div');
+                divs.classList.add('new');
+                element.appendChild(divs);   
+            };   
+        };
+        function hove(e) {
+            this.classList.add('newr');
+        };
+        function addside(e) {
+            let dd = document.querySelector('.side_pnal');
+            dd.classList.add('side_pnal2');
+        };
+        let news = document.querySelectorAll('.new');
+        news.forEach(element =>{element.addEventListener("mouseover", hove)});
+
+        let link = document.querySelector('a');
+        link.addEventListener('onclick', addside)
+
+
+        
+    </script>
+</body>
+</html>
